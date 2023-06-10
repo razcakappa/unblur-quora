@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Unblur Quora",
+  "version": "1.0",
+
+  "description": "Removes the content sensoring bluriness of images",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.quora.com/*"],
+      "js": ["unblur-quora.js"]
+    }
+  ]
+
+}
+
